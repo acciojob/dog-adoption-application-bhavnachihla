@@ -7,10 +7,31 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+	<div class="form-container">
+        <form action="submit_action.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+            
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Your Address" required>
+            
+            <label for="haveDogBefore">Have you ever lived with a Dog before?</label>
+            <input type="checkbox" id="haveDogBefore" name="haveDogBefore" value="Have you ever lived with a Dog before?">
+            
+            <label for="preferredBreeds">Please select your preferred breeds</label>
+            <select multiple id="preferredBreeds" name="preferredBreeds[]" required>
+                <option value="Breed 1">Breed 1</option>
+                <option value="Breed 2">Breed 2</option>
+                <option value="Breed 3">Breed 3</option>
+                <!-- Add more options as needed -->
+            </select>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 
 </html>
